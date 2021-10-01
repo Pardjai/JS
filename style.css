@@ -1,6 +1,45 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
 h1 {
    font-size: 35px;
+   padding: 20px;
 }
-.clone {
-   width: 200px;
+
+.timeScreen {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 250px;
+   background: rgb(252, 92, 125);
+   background: linear-gradient(
+      0deg,
+      rgba(252, 92, 125, 1) 0%,
+      rgba(106, 130, 251, 1) 100%
+   );
+}
+
+.timeScreen span {
+   font-weight: bold;
+   font-size: 24px;
+   color: rgba(0, 0, 0, 0.801);
+}
+
+.timeScreen__num {
+   display: inline-block;
+   text-align: center;
+   min-width: 15px;
+   padding: 5px;
+   box-shadow: inset 0 0 10px rgba(235, 236, 240, 0.384),
+      inset 0 -5px 7px rgba(70, 102, 218, 0.384);
+   border-radius: 5px;
+}
+
+.timeScreen__num:nth-child(2n) {
+   margin-left: 3px;
+}
+.timeScreen__num:not(:first-of-type):nth-child(2n + 1) {
+   margin-left: 7px;
 }
